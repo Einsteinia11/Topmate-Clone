@@ -5,12 +5,15 @@ function Navbar() {
   const [activeNav, setActiveNav] = useState("Home");
   return (
     <nav>
-      <div className="flex pt-[11px] font-[Gilroy] justify-around px-9">
+      <div className="bg-[#0D0D0D] flex pt-[11px] font-[Gilroy] justify-around px-9">
         <div className="pt-[7px] lg:pt-[12px] ">
-          <img src="topmate-dark.svg" className = "w-[100px] h-[27px] lg:w-[140px] lg:h-[27px] "></img>
+          <img
+            src="topmate-dark.svg"
+            className="w-[100px] h-[27px] lg:w-[140px] lg:h-[27px] "
+          ></img>
         </div>
         <div className="hidden md:flex border-[#232323] border-2 justify-between items-center w-[430px] h-[40px] lg:w-[430px] lg:h-[50px] text-white bg-[#0B0B0F] p-1 rounded-xl">
-          {["Home", "Listing", "For Experts", "Clips"].map((item, index) => (
+          {["Home", "Contact Us", "For Experts", "Clips"].map((item, index) => (
             <div key={index} className="cursor-pointer ">
               {activeNav === item ? (
                 <div className="px-[16px] py-[5px] lg:px-[24px] lg:py-[7px] font-semibold rounded-lg bg-[#2E2E2E] flex justify-center items-center">
